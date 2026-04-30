@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: orange;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: white;
+            text-transform: capitalize;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button{
+            width: 30%;
+            padding: 10px;
+            background-color: white;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+
+        p {
+            margin-top: 15px;
+        }
+
+        a {
+            color: orange;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>login</h1>
+    <form action="login.html" method="post">
+
+        <div>
+            <label for="usuário">usuário:</label><br>
+            <input type="text" id="usuário" name="usuário" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="senha">senha:</label><br>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+
+        <br>
+
+        <div>
+            <button type="submit">Logar</button>
+        </div>
+    
+    </form>
+
+    <p>
+        <a href="#">esqueceu a senha?</a>
+    </p>
+</body>
+</html>
