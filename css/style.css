@@ -98,12 +98,31 @@ body {
     outline: none; 
 }
 
-.botao-entrar {
+.item-login {
     background-color: #e63946; 
-    color: white;
+    color: red;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.imagem-login {
+    background-image: url(FundoLogin.png);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 500%;
+    height: auto;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }

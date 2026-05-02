@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
         body {
             font-family: arial, sans-serif;
@@ -17,11 +17,11 @@
         }
 
         form {
-            background-color: orange;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0,0.1);
             width: 300px;
+            background-color: rgba(255, 255, 255, 0.1); 
         }
 
         h1 {
@@ -50,7 +50,7 @@
         }
 
         button:hover {
-            background-color: orange;
+            background-color: white;
         }
 
         p {
@@ -58,7 +58,7 @@
         }
 
         a {
-            color: orange;
+            color: white;
             text-decoration: none;
             font-size: 14px;
         }
@@ -66,6 +66,25 @@
         a:hover {
             text-decoration: underline;
         }
+
+        
+
+        .imagem-login  {
+    background-image: url(FundoLogin.png);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 150px;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: auto;
+    
+}
+
+
+
     </style>
 </head>
 <body>
@@ -89,11 +108,19 @@
         <div>
             <button type="submit">Logar</button>
         </div>
+
+        <div class="imagem-login">
+            <img src="imagem/FundoLogin.png" width="2100px" style="position: relative; left: -200px;" height="1000px" alt="imagem-login">
+            
+        </div>
+
     
     </form>
 
     <p>
         <a href="#">esqueceu a senha?</a>
     </p>
+
+
 </body>
 </html>
